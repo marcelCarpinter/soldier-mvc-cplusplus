@@ -31,3 +31,11 @@ void Presentation::pickWeapon(Weapon* w){
 void Presentation::seeWeapon(){
     soldier->seeWeapon();
 }
+
+void Presentation::shoot(){
+    soldier->shoot();
+}
+
+void Presentation::dropWeapon() {
+    soldier->dropWeapon();
+};

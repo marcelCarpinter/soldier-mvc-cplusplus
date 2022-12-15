@@ -53,17 +53,22 @@ void View::readOption(const char* option, bool& exitCondition)
     }
     else if (str_option == "2")
     {
+        m_presenter->dropWeapon();
+        showText("El soldado ha soltado su arma");
+        showText("========");
         std::cin.get();
         exitCondition = false;
     }
     else if (str_option == "3")
     {
-        std::cin.get();
+        m_presenter->shoot();
         exitCondition = false;
     }
     else if (str_option == "4")
     {
+        showText("El arma actual es:");
         m_presenter->seeWeapon();
+        showText("===========");
         exitCondition = false;
     }
     else if (str_option == "x" || str_option == "X")
@@ -95,7 +100,7 @@ void View::takeWeaponMenu() {
             auto numberOfItem = (int)item.first;
             std::string index = std::to_string(numberOfItem + 1);
             std::string weaponName = weapon->getName();
-            cout << index << " - " << weaponName << endl;
+            showText(index + " - " + weaponName);
         }
 
         showText("X - Cancelar");
@@ -109,7 +114,6 @@ void View::takeWeaponMenu() {
 
 void View::selectWeapon(const string& option, bool& isValidOption){
     if(!weaponsList.empty()){
-        showText(option);
         int index = stoi(option) - 1;
         if( index >= 0 && index < 3){
             isValidOption = true;
@@ -122,6 +126,9 @@ void View::selectWeapon(const string& option, bool& isValidOption){
                 }
             }
             m_presenter->pickWeapon(weaponSelected);
+            showText("Arma seleccionada");
+            showText("Guardando:");
+            showText(weaponSelected->getName());
         }
     }
 }

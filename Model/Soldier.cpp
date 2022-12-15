@@ -12,3 +12,11 @@ void Soldier::pickWeapon(Weapon* selected) {
 void Soldier::seeWeapon() {
     std::cout << weapon->getName() << std::endl;
 }
+
+void Soldier::shoot(){
+    weapon->Shoot();
+}
+
+void Soldier::dropWeapon() {
+    weapon = nullptr;
+}

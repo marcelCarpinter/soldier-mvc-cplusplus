@@ -17,8 +17,9 @@ public:
     Presentation(IView* view);
     map<WeaponType, Weapon *> listWeapons();
     void pickWeapon(Weapon*);
-
     void seeWeapon();
+    void shoot();
+    void dropWeapon();
 };
 
 
