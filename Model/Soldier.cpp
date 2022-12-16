@@ -10,13 +10,31 @@ void Soldier::pickWeapon(Weapon* selected) {
 }
 
 void Soldier::seeWeapon() {
-    std::cout << weapon->getName() << std::endl;
+    if( hasWeapon() ){
+        std::cout << weapon->getName() << std::endl;
+    }
+    else{
+        std::cout << "No tiene un arma en este momento" << std::endl;
+    }
 }
 
 void Soldier::shoot(){
-    weapon->Shoot();
+    if( hasWeapon() ){
+        weapon->Shoot();
+    }
+    else{
+        std::cout << "No hay arma a utilizar" << std::endl;
+    }
 }
 
-void Soldier::dropWeapon() {
-    weapon = nullptr;
+bool Soldier::dropWeapon() {
+    if(hasWeapon()){
+        weapon = nullptr;
+        return true;
+    }
+    return false;
+}
+
+bool Soldier::hasWeapon() {
+    return weapon != nullptr;
 }

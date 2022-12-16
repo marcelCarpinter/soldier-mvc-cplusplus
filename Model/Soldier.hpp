@@ -16,9 +16,10 @@ private:
     string name;
 public:
     void pickWeapon(Weapon* selected);
-    void dropWeapon();
+    bool dropWeapon();
     void shoot();
     void seeWeapon();
+    bool hasWeapon();
 };
 
 
