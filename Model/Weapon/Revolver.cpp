@@ -6,7 +6,7 @@
 #include "Revolver.hpp"
 
 void Revolver::Shoot() {
-    std::cout << "Bam bam" << std::endl;
+    std::cout << "Pum" << std::endl;
 }
 
 Revolver::Revolver() {

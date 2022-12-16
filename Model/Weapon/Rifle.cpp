@@ -6,7 +6,7 @@
 #include "Rifle.hpp"
 
 void Rifle::Shoot() {
-    std::cout << "Bum" << std::endl;
+    std::cout << "Pum pum pum" << std::endl;
 }
 
 Rifle::Rifle() {

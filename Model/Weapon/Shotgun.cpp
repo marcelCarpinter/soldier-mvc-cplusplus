@@ -6,7 +6,7 @@
 #include "Shotgun.hpp"
 
 void Shotgun::Shoot() {
-    std::cout << "Pim" << std::endl;
+    std::cout << "Paaaaa" << std::endl;
 }
 
 Shotgun::Shotgun() {
