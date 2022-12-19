@@ -1,0 +1,15 @@
+# ninja log v5
+37	1277	6928510926713296	CMakeFiles/Soldier.dir/Presentation/Presentation.cpp.obj	1b8645e4391ef8c4
+10	2594	6925914512150406	build.ninja	7aaf9d432f3e7b90
+3	681	6926746919341262	CMakeFiles/Soldier.dir/Model/Weapon/Rifle.cpp.obj	83afc3b01940f9d0
+4	711	6926747300223235	CMakeFiles/Soldier.dir/Model/Weapon/Revolver.cpp.obj	5d12a7b9ba29a95f
+32	1238	6928510926328970	CMakeFiles/Soldier.dir/Model/Soldier.cpp.obj	46a127734d1d0efb
+9	728	6926747300423639	CMakeFiles/Soldier.dir/Model/Weapon/Shotgun.cpp.obj	55c1d6735acbb415
+11	1142	6928510925378955	CMakeFiles/Soldier.dir/main.cpp.obj	cc94c6bc291ad0de
+184	2487	6926746678286712	CMakeFiles/Soldier.dir/Model/Weapon.cpp.obj	95e90d43508d516c
+21	1361	6928510927552801	CMakeFiles/Soldier.dir/View/View.cpp.obj	4dafce00b6f8ef8c
+1362	2342	6928510936695283	Soldier.exe	80f13e2a69bb34e
+4	845	6928511387534446	CMakeFiles/Soldier.dir/View/View.cpp.obj	4dafce00b6f8ef8c
+845	1113	6928511390155598	Soldier.exe	80f13e2a69bb34e
+4	827	6928513130911294	CMakeFiles/Soldier.dir/View/View.cpp.obj	4dafce00b6f8ef8c
+829	1124	6928513133815689	Soldier.exe	80f13e2a69bb34e
